@@ -10,11 +10,13 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 main {
     height: 100vh;
+    overflow: scroll;
     background-color: black;
 }
 
 .mainbox {
     height: 100%;
+    width: 100%;
 }
 
 img {
@@ -29,5 +31,10 @@ img {
 
 .card {
     display: none;
+    opacity: 1;
+    transition: 0.5;
+    width: 50%;
 }
+
+
 
