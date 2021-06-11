@@ -1,9 +1,11 @@
-const eyeballs = document.querySelectorAll('.eyeball');
+const eyeballs = document.querySelectorAll('.player');
 const card = document.querySelectorAll('.card');
-const sharingan = document.querySelectorAll('.sharingan');
+const sharingan = document.querySelectorAll('.playerFace');
 const firstRow = document.querySelector('.firstRow')
 const secondRow = document.querySelector('.secondRow')
 const thirdRow = document.querySelector('.thirdRow')
+const raptorsLogoDiv = document.querySelector('.raptorsLogo')
+const raptorsLogoImg = document.querySelector('.raptorsLogoImg')
 //DOM target variables ^   
 
 //API CALL
@@ -18,11 +20,11 @@ request.onload = function () {
 	if(this.status >= 200 && this.status < 400) {   
         team.forEach(function(player){
             const col = document.createElement('div');
-            col.classList.add('col', 'm4', 'eyeball')
+            col.classList.add('col', 'm4', 'player')
             
             const img = document.createElement('img');
             img.setAttribute('src', `./assets/${player.firstName}.png`)
-            img.classList.add('responsive-img', 'sharingan')
+            img.classList.add('responsive-img', 'playerFace')
 
             const card = document.createElement('div')
             card.classList.add('card')
@@ -88,7 +90,7 @@ function startAndDepth(teamMates) {
 }
 
 function hideEye(e) {
-    if(e.target.classList.contains('sharingan')){
+    if(e.target.classList.contains('playerFace')){
         e.target.style.opacity = 0;
         setTimeout(changeDisplayNone, 500, e.target)
         setTimeout(changeDisplayIB, 500, e.target.nextElementSibling)
@@ -110,4 +112,11 @@ function changeOpacityOn(e) {
     e.style.opacity = 1;
 }
 
+raptorsLogoImg.addEventListener('click',function(e) {
+    raptorsLogoImg.style.opacity = 0;
+    raptorsLogoDiv.style.opacity = 0;
+
+    setTimeout(changeDisplayNone, 500, e.target.parentNode);
+
+})
 
