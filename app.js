@@ -69,6 +69,12 @@ request.onload = function () {
             }
 
             col.addEventListener('click', hideEye);
+            returnButton.addEventListener('click', function() {
+                card.style.opacity = 0;
+                setTimeout(changeDisplayNone, 100, card)
+                setTimeout(changeDisplayIB, 100, img)
+                setTimeout(function() {img.style.opacity = 1}, 200);
+            })
         })
     } else {
         console.log('SADGE')
@@ -95,6 +101,11 @@ function hideEye(e) {
         setTimeout(changeDisplayNone, 500, e.target)
         setTimeout(changeDisplayIB, 500, e.target.nextElementSibling)
     }
+    
+    if(e.target.nextElementSibling.style.opacity == 0){
+        e.target.nextElementSibling.style.opacity = 1;
+    }
+
 }
 //The function for hiding the eye^
 

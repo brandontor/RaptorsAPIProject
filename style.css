@@ -33,6 +33,11 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 nav {
     z-index: 1;
+    font-family: 'Graduate', cursive;
+}
+
+nav span{
+    font-size: 1.3rem;
 }
 
 main {
@@ -57,11 +62,15 @@ main {
 
 img {
     height: 50%;
-    width: 50%;
+    width: 62%;
 }
 
 .playerFace {
     transition-duration: 0.5s;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5%;
+    cursor: pointer;
 }
 
 
@@ -69,7 +78,30 @@ img {
     display: none;
     opacity: 1;
     transition: 0.5;
-    width: 50%;
+    width: 62%;
+    border: 2px solid red;
+    border-radius: 5%;
+}
+
+.card img {
+    margin-top: 10px;
+}
+
+.card .card-content {
+    padding: 10px;
+    border-radius: 0 0 2px 2px;
+    margin: 10px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+}
+
+.card .card-action {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.card-action a {
+    cursor: pointer;
 }
 
 
