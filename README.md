@@ -26,6 +26,7 @@ I also learned to filter API data and return the specific elements I wanted from
 
 ## Things To Improve
 * I would like to figure out a way to speed up the webpage, for example if the API data does not load faster then the webpage, you will see blank elements. I worked around this by creating the Logo landing page which gives the API time to load behind the scenes. 
+* I should have created two branches, one for production and one for development. I'll be implementing that workflow on future projects.
 
 ## Deployment
 Deployed with [Netlify](https://www.netlify.com/)
