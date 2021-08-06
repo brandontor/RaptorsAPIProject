@@ -15,7 +15,13 @@ I also picked up Materialize CSS as I wanted to pick up a framework to cut down 
 ## Note **
 I had to learn a few JS concepts the hard way as well, such as when I wanted to change the opacity of my element for the transition effect while also having it display none. This was not possible to do at the same time as the element would just disappear so I had to implement setTimeout() as a workaround.
 
+<img src="https://user-images.githubusercontent.com/53887678/128570655-2427cdb4-7ce8-455e-80f8-7acc0674c8c6.png" width="300"></img>
+
+
 I also learned to filter API data and return the specific elements I wanted from the API. For example I created a function that would return specific players based on a conditional that checked for their playerID. 
+
+<img src="https://user-images.githubusercontent.com/53887678/128570780-eb15754b-318a-4b9e-817e-5def432c9150.png" width="300"></img>
+<img src="https://user-images.githubusercontent.com/53887678/128570873-5401d5eb-d7dd-473f-a23f-0e2438d3d921.png" width="300"></img>
 
 
 ## Things To Improve
